@@ -1,4 +1,11 @@
-$.getJSON "/data.json", (data) ->
+BACKEND_URL = "/data.json"
+
+document.addEventListener 'touchmove', (event) ->
+    event.preventDefault()
+    window.scroll 0,0
+    return false
+
+$.getJSON BACKEND_URL, (data) ->
     for flap in ['top', 'middle', 'bottom']
         do (flap) ->
             slides = []

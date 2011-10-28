@@ -1,5 +1,12 @@
 (function() {
-  $.getJSON("/data.json", function(data) {
+  var BACKEND_URL;
+  BACKEND_URL = "/data.json";
+  document.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+    window.scroll(0, 0);
+    return false;
+  });
+  $.getJSON(BACKEND_URL, function(data) {
     var flap, _i, _len, _ref, _results;
     _ref = ['top', 'middle', 'bottom'];
     _results = [];
