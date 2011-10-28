@@ -6,3 +6,14 @@
 #{$less-grid-element} {
     @include grid(10);
 }
+
+@if $debug {
+    body:before {
+        content: "default";
+    }
+}
+
+#flipbook {
+    @include column(8);
+    margin: 0 auto;
+}

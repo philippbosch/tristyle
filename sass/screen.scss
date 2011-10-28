@@ -7,6 +7,8 @@
 // by William Wells <less@hapa.me>
 // https://github.com/willhw/compass-less-plugin
 
+$debug: true;
+
 @import "less/reset";
 @import "less/framework";
 @import "less/typography/16px";
