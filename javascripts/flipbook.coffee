@@ -1,4 +1,4 @@
-BACKEND_URL = "/data.json"
+BACKEND_URL = "data.json"
 
 document.addEventListener 'touchmove', (event) ->
     event.preventDefault()

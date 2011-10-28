@@ -1,6 +1,6 @@
 (function() {
   var BACKEND_URL;
-  BACKEND_URL = "/data.json";
+  BACKEND_URL = "data.json";
   document.addEventListener('touchmove', function(event) {
     event.preventDefault();
     window.scroll(0, 0);
