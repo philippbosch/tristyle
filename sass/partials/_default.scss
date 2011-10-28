@@ -5,7 +5,7 @@
 
 #{$less-grid-element} {
     @include grid(10);
-    margin: 0 auto;
+    margin: 24px auto;
 }
 
 @if $debug {
@@ -15,6 +15,5 @@
 }
 
 #flipbook {
-    @include column(8);
-    margin: 0 auto;
+    @include column(6);
 }

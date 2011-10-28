@@ -1,0 +1,39 @@
+(function() {
+  $.getJSON("/data.json", function(data) {
+    var flap, _i, _len, _ref, _results;
+    _ref = ['top', 'middle', 'bottom'];
+    _results = [];
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      flap = _ref[_i];
+      _results.push((function(flap) {
+        var carousel, el, i, p, page, slides, _j, _len2, _ref2;
+        slides = [];
+        _ref2 = data.products[flap];
+        for (_j = 0, _len2 = _ref2.length; _j < _len2; _j++) {
+          p = _ref2[_j];
+          slides.push("<img src=\"" + p.image + "\" alt=\"" + p.name + "\" />");
+        }
+        carousel = new SwipeView('#' + flap, {
+          numberOfPages: slides.length,
+          hastyPageFlip: true
+        });
+        for (i = 0; i <= 2; i++) {
+          page = i === 0 ? slides.length - 1 : i - 1;
+          el = document.createElement('span');
+          el.innerHTML = slides[page];
+          carousel.masterPages[i].appendChild(el);
+        }
+        return carousel.onFlip(function() {
+          var i, upcoming, _results2;
+          _results2 = [];
+          for (i = 0; i <= 2; i++) {
+            upcoming = carousel.masterPages[i].dataset.upcomingPageIndex;
+            _results2.push(upcoming !== carousel.masterPages[i].dataset.pageIndex ? (el = carousel.masterPages[i].querySelector('span'), el.innerHTML = slides[upcoming]) : void 0);
+          }
+          return _results2;
+        });
+      })(flap));
+    }
+    return _results;
+  });
+}).call(this);
