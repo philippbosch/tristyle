@@ -1,0 +1,9 @@
+#flipbook {
+    .flap {
+        height: 200px;
+        margin-bottom: 1px;
+        @include background(#FFF linear-gradient(-87deg, rgba(#000,0) 40%, rgba(#000,0.05)));
+        @include border-radius(4px);
+        @include box-shadow(rgba(#000,0.1) 0 0 3px);
+    }
+}

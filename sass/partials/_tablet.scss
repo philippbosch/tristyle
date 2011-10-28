@@ -13,4 +13,8 @@
     #{$less-grid-element} {
         @include grid(8);
     }
+    
+    #flipbook {
+        @include column(8, true);
+    }
 }

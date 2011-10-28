@@ -5,6 +5,7 @@
 
 #{$less-grid-element} {
     @include grid(10);
+    margin: 0 auto;
 }
 
 @if $debug {
