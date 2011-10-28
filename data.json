@@ -3,7 +3,7 @@
         "top": [
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/black_01.png",
+                "image": "images/products/black_01.png",
                 "shop": "frontlineshop",
                 "price": 69.99,
                 "in_stock": true,
@@ -11,7 +11,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/gray_01.png",
+                "image": "images/products/gray_01.png",
                 "shop": "7trends",
                 "price": 59.99,
                 "in_stock": true,
@@ -19,7 +19,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/blue_01.png",
+                "image": "images/products/blue_01.png",
                 "shop": "kolibri",
                 "price": 79.99,
                 "in_stock": true,
@@ -27,7 +27,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/green_01.png",
+                "image": "images/products/green_01.png",
                 "shop": "frontlineshop",
                 "price": 69.99,
                 "in_stock": true,
@@ -35,7 +35,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/olive_01.png",
+                "image": "images/products/olive_01.png",
                 "shop": "7trends",
                 "price": 99.99,
                 "in_stock": true,
@@ -43,7 +43,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/yellow_01.png",
+                "image": "images/products/yellow_01.png",
                 "shop": "kolibri",
                 "price": 69.99,
                 "in_stock": true,
@@ -51,7 +51,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/red_01.png",
+                "image": "images/products/red_01.png",
                 "shop": "frontlineshop",
                 "price": 59.99,
                 "in_stock": true,
@@ -59,7 +59,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/purple_01.png",
+                "image": "images/products/purple_01.png",
                 "shop": "7trends",
                 "price": 69.99,
                 "in_stock": true,
@@ -67,7 +67,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/pink_01.png",
+                "image": "images/products/pink_01.png",
                 "shop": "kolibri",
                 "price": 89.99,
                 "in_stock": true,
@@ -75,7 +75,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/white_01.png",
+                "image": "images/products/white_01.png",
                 "shop": "frontlineshop",
                 "price": 99.99,
                 "in_stock": true,
@@ -85,7 +85,7 @@
         "middle": [
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/black_02.png",
+                "image": "images/products/black_02.png",
                 "shop": "7trends",
                 "price": 69.99,
                 "in_stock": true,
@@ -93,7 +93,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/gray_02.png",
+                "image": "images/products/gray_02.png",
                 "shop": "kolibri",
                 "price": 59.99,
                 "in_stock": true,
@@ -101,7 +101,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/blue_02.png",
+                "image": "images/products/blue_02.png",
                 "shop": "frontlineshop",
                 "price": 79.99,
                 "in_stock": true,
@@ -109,7 +109,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/green_02.png",
+                "image": "images/products/green_02.png",
                 "shop": "7trends",
                 "price": 69.99,
                 "in_stock": true,
@@ -117,7 +117,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/olive_02.png",
+                "image": "images/products/olive_02.png",
                 "shop": "kolibri",
                 "price": 99.99,
                 "in_stock": true,
@@ -125,7 +125,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/yellow_02.png",
+                "image": "images/products/yellow_02.png",
                 "shop": "frontlineshop",
                 "price": 69.99,
                 "in_stock": true,
@@ -133,7 +133,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/red_02.png",
+                "image": "images/products/red_02.png",
                 "shop": "7trends",
                 "price": 59.99,
                 "in_stock": true,
@@ -141,7 +141,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/purple_02.png",
+                "image": "images/products/purple_02.png",
                 "shop": "kolibri",
                 "price": 69.99,
                 "in_stock": true,
@@ -149,7 +149,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/pink_02.png",
+                "image": "images/products/pink_02.png",
                 "shop": "frontlineshop",
                 "price": 89.99,
                 "in_stock": true,
@@ -157,7 +157,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/white_02.png",
+                "image": "images/products/white_02.png",
                 "shop": "7trends",
                 "price": 99.99,
                 "in_stock": true,
@@ -167,7 +167,7 @@
         "bottom": [
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/black_03.png",
+                "image": "images/products/black_03.png",
                 "shop": "kolibri",
                 "price": 69.99,
                 "in_stock": true,
@@ -175,7 +175,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/gray_03.png",
+                "image": "images/products/gray_03.png",
                 "shop": "frontlineshop",
                 "price": 59.99,
                 "in_stock": true,
@@ -183,7 +183,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/blue_03.png",
+                "image": "images/products/blue_03.png",
                 "shop": "7trends",
                 "price": 79.99,
                 "in_stock": true,
@@ -191,7 +191,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/green_03.png",
+                "image": "images/products/green_03.png",
                 "shop": "kolibri",
                 "price": 69.99,
                 "in_stock": true,
@@ -199,7 +199,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/olive_03.png",
+                "image": "images/products/olive_03.png",
                 "shop": "frontlineshop",
                 "price": 99.99,
                 "in_stock": true,
@@ -207,7 +207,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/yellow_03.png",
+                "image": "images/products/yellow_03.png",
                 "shop": "7trends",
                 "price": 69.99,
                 "in_stock": true,
@@ -215,7 +215,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/red_03.png",
+                "image": "images/products/red_03.png",
                 "shop": "kolibri",
                 "price": 59.99,
                 "in_stock": true,
@@ -223,7 +223,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/purple_03.png",
+                "image": "images/products/purple_03.png",
                 "shop": "frontlineshop",
                 "price": 69.99,
                 "in_stock": true,
@@ -231,7 +231,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/pink_03.png",
+                "image": "images/products/pink_03.png",
                 "shop": "7trends",
                 "price": 89.99,
                 "in_stock": true,
@@ -239,7 +239,7 @@
             },
             {
                 "name": "Lorem ipsum",
-                "image": "/images/products/white_03.png",
+                "image": "images/products/white_03.png",
                 "shop": "kolibri",
                 "price": 99.99,
                 "in_stock": true,
@@ -250,15 +250,15 @@
     "shops": {
         "frontlineshop": {
             "name": "frontlineshop",
-            "logo": "/images/shops/frontlineshop.png"
+            "logo": "images/shops/frontlineshop.png"
         },
         "7trends": {
             "name": "7trends",
-            "logo": "/images/shops/7trends.jpg"
+            "logo": "images/shops/7trends.jpg"
         },
         "kolibri": {
             "name": "kolibri",
-            "logo": "/images/shops/kolibri.gif"
+            "logo": "images/shops/kolibri.gif"
         }
     }
 }
