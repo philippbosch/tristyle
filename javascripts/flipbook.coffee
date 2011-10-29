@@ -11,7 +11,7 @@ $.getJSON BACKEND_URL, (data) ->
             slides = []
             
             for p in data.products[flap]
-                slides.push """<img src="#{p.image}" alt="#{p.name}" />"""
+                slides.push """<div class="product" data-price="#{p.price}"><img src="#{p.image}" alt="#{p.name}" /></div>"""
             
             carousel = new SwipeView '#' + flap, 
                 numberOfPages: slides.length
@@ -24,9 +24,16 @@ $.getJSON BACKEND_URL, (data) ->
                 carousel.masterPages[i].appendChild el
             
             carousel.onFlip ->
+                $activeProduct = $ '.swipeview-active .product', this
+                $priceTag = $ '.price .value', this
+                
+                $priceTag.text $activeProduct.data 'price'
+                
                 for i in [0..2]
                     upcoming = carousel.masterPages[i].dataset.upcomingPageIndex
-                
+                    
                     if upcoming != carousel.masterPages[i].dataset.pageIndex
                         el = carousel.masterPages[i].querySelector 'span'
                         el.innerHTML = slides[upcoming]
+            
+            carousel.__flip()

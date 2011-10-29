@@ -18,7 +18,7 @@
         _ref2 = data.products[flap];
         for (_j = 0, _len2 = _ref2.length; _j < _len2; _j++) {
           p = _ref2[_j];
-          slides.push("<img src=\"" + p.image + "\" alt=\"" + p.name + "\" />");
+          slides.push("<div class=\"product\" data-price=\"" + p.price + "\"><img src=\"" + p.image + "\" alt=\"" + p.name + "\" /></div>");
         }
         carousel = new SwipeView('#' + flap, {
           numberOfPages: slides.length,
@@ -30,8 +30,11 @@
           el.innerHTML = slides[page];
           carousel.masterPages[i].appendChild(el);
         }
-        return carousel.onFlip(function() {
-          var i, upcoming, _results2;
+        carousel.onFlip(function() {
+          var $activeProduct, $priceTag, i, upcoming, _results2;
+          $activeProduct = $('.swipeview-active .product', this);
+          $priceTag = $('.price .value', this);
+          $priceTag.text($activeProduct.data('price'));
           _results2 = [];
           for (i = 0; i <= 2; i++) {
             upcoming = carousel.masterPages[i].dataset.upcomingPageIndex;
@@ -39,6 +42,7 @@
           }
           return _results2;
         });
+        return carousel.__flip();
       })(flap));
     }
     return _results;

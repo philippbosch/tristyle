@@ -21,6 +21,13 @@
         img {
             pointer-events: none;
         }
+        
+        .price {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 10px 15px;
+        }
     }
     
     #top {
