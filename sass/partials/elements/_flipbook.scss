@@ -37,6 +37,7 @@
             color: #666;
             font-weight: bold;
             @include text-shadow(#FFF 0 1px);
+            @include scale(0);
         }
     }
     
