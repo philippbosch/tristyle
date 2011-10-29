@@ -28,6 +28,8 @@ body {
     height: 100%;
     overflow: hidden;
     font-family: "Helvetica Neue", serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     
     @if $debug {
         &:before, &:after, #reloader {
@@ -67,5 +69,5 @@ body {
 }
 
 // Selection colors (easy to forget)
-@include selection-color(unquote("rgb(255,255,158)"));
+@include selection-color(unquote("rgb(204,204,204)"));
 
