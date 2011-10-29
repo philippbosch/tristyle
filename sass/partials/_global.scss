@@ -29,21 +29,38 @@ body {
     overflow: hidden;
     
     @if $debug {
-        &:before, &:after {
+        &:before, &:after, #reloader {
             position: fixed;
             bottom: 0;
-            right: 0;
             background: rgba(#000,0.1);
             color: #FFF;
-            padding: 0px 6px;
+            padding: 0px 10px;
             height: 24px;
             line-height: 24px;
+            text-decoration: none;
+        }
+        
+        &:before, &:after {
+            right: 0;
             @include border-top-left-radius(4px);
+        }
+        
+        #reloader {
+            left: 0;
+            @include border-top-right-radius(4px);
         }
         
         &:after {
             bottom: 24px;
             background: rgba(#000,0.05);
+        }
+        
+        #reloader {
+            display: block;
+        }
+    } @else {
+        #reloader {
+            display: none;
         }
     }
 }
