@@ -11,7 +11,11 @@ $.getJSON BACKEND_URL, (data) ->
             slides = []
             
             for p in data.products[flap]
-                slides.push """<div class="product" data-price="#{p.price}"><img src="#{p.image}" alt="#{p.name}" class="photo" /></div>"""
+                slides.push """
+                    <div class="product" data-price="#{p.price}">
+                        <img src="#{p.image}" alt="#{p.name}" class="photo" />
+                    </div>
+                """
             
             carousel = new SwipeView '#' + flap, 
                 numberOfPages: slides.length

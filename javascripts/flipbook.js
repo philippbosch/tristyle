@@ -18,7 +18,7 @@
         _ref2 = data.products[flap];
         for (_j = 0, _len2 = _ref2.length; _j < _len2; _j++) {
           p = _ref2[_j];
-          slides.push("<div class=\"product\" data-price=\"" + p.price + "\"><img src=\"" + p.image + "\" alt=\"" + p.name + "\" class=\"photo\" /></div>");
+          slides.push("<div class=\"product\" data-price=\"" + p.price + "\">\n    <img src=\"" + p.image + "\" alt=\"" + p.name + "\" class=\"photo\" />\n</div>");
         }
         carousel = new SwipeView('#' + flap, {
           numberOfPages: slides.length,
