@@ -1,5 +1,6 @@
 #flipbook {
     .flap {
+        position: relative;
         height: 200px;
         margin-bottom: 1px;
         @include background(#EEE 
@@ -18,15 +19,24 @@
         @include border-radius(4px);
         @include box-shadow(rgba(#000,0.1) 0 0 3px);
         
-        img {
+        .photo {
             pointer-events: none;
+            margin-left: 20px;
         }
         
         .price {
             position: absolute;
             right: 0;
             bottom: 0;
-            padding: 10px 15px;
+            padding: 5px 10px;
+            margin: 10px;
+            z-index: 1000;
+            @include background(#CCC linear-gradient(top, rgba(#FFF, .8), rgba(#FFF, 0)));
+            @include border-radius(4px);
+            @include box-shadow(rgba(#000, 0.2) 0 0 1px);
+            color: #666;
+            font-weight: bold;
+            @include text-shadow(#FFF 0 1px);
         }
     }
     

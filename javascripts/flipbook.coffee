@@ -11,7 +11,7 @@ $.getJSON BACKEND_URL, (data) ->
             slides = []
             
             for p in data.products[flap]
-                slides.push """<div class="product" data-price="#{p.price}"><img src="#{p.image}" alt="#{p.name}" /></div>"""
+                slides.push """<div class="product" data-price="#{p.price}"><img src="#{p.image}" alt="#{p.name}" class="photo" /></div>"""
             
             carousel = new SwipeView '#' + flap, 
                 numberOfPages: slides.length
@@ -25,9 +25,14 @@ $.getJSON BACKEND_URL, (data) ->
             
             carousel.onFlip ->
                 $activeProduct = $ '.swipeview-active .product', this
-                $priceTag = $ '.price .value', this
+                $priceTag = $ '.price', this
                 
-                $priceTag.text $activeProduct.data 'price'
+                $priceTag.anim scale: 0, opacity: 0, .2, 'linear', ->
+                    $priceTag.find('.value').text $activeProduct.data 'price'
+                    $priceTag.anim scale: 1, opacity: 1, .5, 'cubic-bezier(.17,.67,.24,1)'
+                    
+                    # cubic-bezier(.17,.67,.24,2) would be nicer but does not work correctly
+                    # on mobile safari (https://bugs.webkit.org/show_bug.cgi?id=45761)
                 
                 for i in [0..2]
                     upcoming = carousel.masterPages[i].dataset.upcomingPageIndex
