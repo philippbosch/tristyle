@@ -12,9 +12,32 @@
     
     #{$less-grid-element} {
         @include grid(3);
+        font-size: 70%;
     }
     
     #flipbook {
         @include column(3, true);
+        
+        #top {
+            height: 115px;
+        }
+        
+        #middle {
+            height: 143px;
+        }
+        
+        #bottom {
+            height: 42px;
+        }
+        
+        .flap {
+            .photo {
+                height: 100%;
+            }
+            
+            .price {
+                padding: 0px 6px;
+            }
+        }
     }
 }
