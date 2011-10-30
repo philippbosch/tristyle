@@ -1,4 +1,7 @@
 #flipbook {
+    padding-bottom: 52px;
+    position: relative;
+    
     .flap {
         position: relative;
         height: 200px;
@@ -23,21 +26,26 @@
             pointer-events: none;
             margin-left: 20px;
         }
-        
-        .price {
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
-            padding: 5px 10px;
-            z-index: 1000;
-            @include background(#CCC linear-gradient(top, rgba(#FFF, .8), rgba(#FFF, 0)));
-            @include border-radius(4px);
-            @include box-shadow(rgba(#000, 0.2) 0 0 1px);
-            color: #666;
-            font-weight: bold;
-            @include text-shadow(#FFF 0 1px);
-            @include scale(0);
-        }
+    }
+    
+    .price {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        padding: 5px 10px;
+        z-index: 1000;
+        @include background(#CCC linear-gradient(top, rgba(#FFF, .8), rgba(#FFF, 0)));
+        @include border-radius(4px);
+        @include box-shadow(rgba(#000, 0.2) 0 0 1px);
+        color: #666;
+        @include text-shadow(#FFF 0 1px);
+        @include scale(0);
+    }
+    
+    #total {
+        @include scale(1);
+        font-weight: bold;
+        background-color: #AAA;
     }
     
     #top {
