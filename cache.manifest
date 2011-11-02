@@ -1,4 +1,6 @@
 CACHE MANIFEST
+
+CACHE:
 stylesheets/screen.css
 index.html
 javascripts/flipbook.js
@@ -47,4 +49,10 @@ images/products/yellow_03.png
 images/shops/frontlineshop.png
 images/shops/7trends.jpg
 images/shops/kolibrishop.gif
-# 2011-11-02T13:45:48Z
+
+
+NETWORK:
+http://analytics.pb.io/*
+
+
+# 2011-11-02T14:14:34Z
