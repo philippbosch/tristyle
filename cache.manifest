@@ -1,6 +1,7 @@
 CACHE MANIFEST
 
 CACHE:
+/
 stylesheets/screen.css
 index.html
 javascripts/flipbook.js
@@ -55,4 +56,4 @@ NETWORK:
 http://analytics.pb.io/
 
 
-# 2011-11-02T14:36:46Z
+# 2011-11-02T14:38:05Z
