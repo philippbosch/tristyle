@@ -6,7 +6,7 @@ TEMPLATE_FILE = 'cache.manifest.template'
 
 desc "Builds the cache.manifest appcache file"
 task :build_manifest do
-  cache_urls = FileList['**/*.css', '**/*.html', '**/*.js', '**/*.json', '**/*.png', '**/*.jpg', '**/*.gif']
+  cache_urls = ['/'] + FileList['**/*.css', '**/*.html', '**/*.js', '**/*.json', '**/*.png', '**/*.jpg', '**/*.gif']
   network_urls = [
     'http://analytics.pb.io/'
   ]
